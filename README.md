@@ -11,7 +11,7 @@ Schedules alerts to client that remind them to complete their payment for comple
 
 # How its working in a nutshell
 
-  - The system receives a POST rest api whenever a abandoned webevent is called (outside the scope of the requirement)
+  - The system receives a POST rest api (Body object reference shared at the end of this file) whenever a abandoned webevent is called (outside the scope of the requirement)
   - A new alert job object is created which also contains the future alert dates and stored in the DB.
   - A cron job keeps on running that check for a condition if the current Date and time exceeds the future date time value stores in each alert job object
   - When ever the condition is met the alert jobs get updated to keep track of how many more alerts are allowed 
