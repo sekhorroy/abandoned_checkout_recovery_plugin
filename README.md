@@ -5,12 +5,11 @@ Schedules alerts to client that remind them to complete their payment for comple
 [![Screenshot-2022-10-24-at-7-03-46-PM.png](https://i.postimg.cc/t4RR1d2N/Screenshot-2022-10-24-at-7-03-46-PM.png)](https://postimg.cc/tYfGw60s)
 
 # Technology Used
-1. ExpressJs - Backend - REST ENDPOINTS
-2. ReactJs - FrontEnd Client
-3. NodeJs - Cron scheduler
+  1. ExpressJs - Backend - REST ENDPOINTS
+  2. ReactJs - FrontEnd Client
+  3. NodeJs - Cron scheduler
 
 # How its working in a nutshell
-
   - The system receives a POST rest api (Body object reference shared at the end of this file) whenever a abandoned webevent is called (outside the scope of the requirement)
   - A new alert job object is created which also contains the future alert dates and stored in the DB.
   - A cron job keeps on running that check for a condition if the current Date and time exceeds the future date time value stores in each alert job object
@@ -24,10 +23,9 @@ Schedules alerts to client that remind them to complete their payment for comple
 # Before you start the project
     1. proxy value is defined in the package.json in both backend and frontend code.
     2. Please change it to some other port 8001 (default api port)  && 3000 (default client port) are busy in your machine
-  
+    3. No database is used in this project, the objects are store in files.
   
 # To run the project in your machine
-
   - git clone the repo into your local machine desired directory
   - go inside the main root file i.e schedule_plugin directory
   
@@ -45,9 +43,7 @@ Schedules alerts to client that remind them to complete their payment for comple
   
 
 # Public Rest Endpoints
-
 // this endpoint is used to feed the abandoned url data to the system
-
 1. POST REQUEST: http://localhost:PORT/abandoned
 
     // Reference body of the request
