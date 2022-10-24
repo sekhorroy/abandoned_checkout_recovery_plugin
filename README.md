@@ -1,6 +1,8 @@
 # Abandoned checkout recovery plugin
 Schedules alerts to client that remind them to complete their payment for completion of orders in a e-commerce site
 
+# Client Side ScreenShot
+[![Screenshot-2022-10-24-at-7-03-46-PM.png](https://i.postimg.cc/t4RR1d2N/Screenshot-2022-10-24-at-7-03-46-PM.png)](https://postimg.cc/tYfGw60s)
 
 # Technology Used
 1. ExpressJs - Backend - REST ENDPOINTS
